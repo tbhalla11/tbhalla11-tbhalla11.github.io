@@ -1,0 +1,36 @@
+<div class="container">
+  <div id="form-container">
+    <h1>Contact Me</h1>
+
+    <h4> You can reach out to me on my socials or fill in the form below to
+    in touch!</h4>
+
+    <form [formGroup]="contactInfo" (ngSubmit)="sendData(contactInfo.value)">
+      <ul class="wrapper">
+        <li class="row">
+      <label for="fName">First name: </label>
+      <input type="text" name="fName" id="fName" formControlName="fName">
+        </li>
+      <br>
+        <li class="row">
+      <label for="lName">Last name: </label>
+      <input type="text" name="lName" id="lName" formControlName="lName">
+        </li>
+      <br>
+        <li class="row">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" formControlName="email">
+        </li>
+      <br>
+        <li class="row">
+        <label>Message:</label>
+      <textarea placeholder="Let me know what you'd like to discuss!" cols="30" rows="12" formControlName="message">
+      </textarea>
+        </li>
+        <li class="row">
+      <button type="submit" [disabled]="this.contactInfo.invalid" (click)="sendData(contactInfo)">Submit</button>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>

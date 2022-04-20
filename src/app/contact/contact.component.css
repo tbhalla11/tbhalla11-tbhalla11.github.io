@@ -1,0 +1,68 @@
+.container{
+  width: 80%;
+  height: auto;
+  margin-top: 8%;
+  position: relative;
+  font-family: 'Prompt', sans-serif;
+}
+
+h1{
+  color: #C11FE0;
+  text-align: center;
+  margin: 1em;
+}
+
+h4{
+  margin: 1.5em;
+  padding: 0.5em;
+  color: #E0C11F;
+  text-align: center;
+
+}
+
+.wrapper{
+  list-style-type: none;
+  padding: -2em;
+  border-radius: 1em;
+}
+
+.row{
+  display: flex;
+  justify-content: flex-end;
+  color: #E0C11F;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+button{
+  margin-top: 2%;
+  width: 20%;
+  height: 5vh;
+  color: #1FE0C1;
+  border: 0.5em solid #C11FE0;
+  background-color: black;
+}
+.row > label{
+  flex: 1;
+}
+.row > input{
+  flex: 2;
+  border: 0.2em solid #1FE0C1;
+}
+.row > textarea {
+  flex: 2;
+  border: 0.2em solid #1FE0C1;
+
+}
+.row > button{
+  border: 0.2em solid #1FE0C1;
+  color: #1FE0C1;
+}
+
+#form-container{
+  font-size: 1em;
+  text-align: center;
+  color: #E0C11F;
+  padding-bottom: 5%;
+}
+

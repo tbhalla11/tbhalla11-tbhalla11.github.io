@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.3;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to{
+    width: 99%;
+  }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+@keyframes lightSpeedInRight {
+  from {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-5deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.pageTitle {
+  transform-origin: center bottom;
+  padding-top: 10%;
+  text-align: center;
+  font-size: 55px;
+  animation-name: swing;
+  animation-duration: 4s;
+  color: #C11FE0;
+  font-family: 'Prompt', sans-serif;
+  text-align: left;
+  opacity: 0.8;
+}
+
+
+
+.intro{
+  align-items: center;
+  justify-content: center;
+  color: #1FE0C1;
+  animation: typing 5s steps(105), blink .5s step-end;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Prompt', sans-serif;
+  font-size: 2em;
+}
+
+.info{
+  animation-name: fadeIn;
+  animation-delay: initial;
+  animation-duration: 7s;
+  animation-timing-function: ease-out;
+  color: #E0C11F;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Prompt', sans-serif;
+  letter-spacing: 2px;
+}
+
+.textShift{
+  text-align: left;
+}
+
+.icon_container{
+  align-items: center;
+  text-align: center;
+  color: #C11FE0;
+  font-size: 1em;
+}
+.icons{
+  color: white;
+}
+
+li{
+  display: inline-block;
+  list-style: none;
+  padding: 3em;
+}
+h1{
+  font-family: 'Prompt', sans-serif;
+  letter-spacing: 1px;
+  opacity: 1.5;
+  padding-top: 1.5%;
+}
+

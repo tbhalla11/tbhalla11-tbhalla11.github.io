@@ -1,0 +1,38 @@
+.icon-bar{
+  position: fixed;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.LinkedIn{
+  color: white;
+  background-color: blue;
+}
+.gitHub{
+  color: orange;
+  background-color: black;
+}
+.instagram{
+  color: #C11FE0;
+  background-color: navy;
+}
+.twitter{
+  color: deepskyblue;
+  background-color: whitesmoke;
+}
+
+.icon-bar a{
+  display: block;
+  text-align: center;
+  padding: 0.2em;
+  transition: all 0.5s ease;
+  font-size: 1.75em;
+  font-family: 'Prompt', sans-serif;
+  width: 1.9em;
+}
+
+.icon-bar a:hover{
+  transform: scale(1.4);
+}
